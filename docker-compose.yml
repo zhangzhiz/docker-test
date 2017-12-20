@@ -8,6 +8,8 @@ services:
       ports:
        - "3001:3333"
       container_name: docker-spring-boot
+      environment:
+              SPRING_PROFILES_ACTIVE: dev
     
 networks:
   default:
