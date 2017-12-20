@@ -1,6 +1,6 @@
 version: "2"
 services:
-    lrh-auth-service-server:
+    docker-service:
       restart: always
       image: zzzdocker/docker-spring-boot
       volumes:
