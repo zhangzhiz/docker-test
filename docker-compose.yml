@@ -4,7 +4,7 @@ services:
       restart: always
       image: zzzdocker/docker-spring-boot
       volumes:
-               - /etc/localtime:/etc/localtime
+               - /log:/tmp
       ports:
        - "3001:3333"
       container_name: docker-spring-boot
