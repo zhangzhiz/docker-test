@@ -1,0 +1,16 @@
+version: "2"
+services:
+    lrh-auth-service-server:
+      restart: always
+      image: zzzdocker/docker-spring-boot
+      volumes:
+               - /var/log/lrh/lrh-auth-service:/tmp
+               - /etc/localtime:/etc/localtime
+      ports:
+       - "3001:3333"
+      container_name: docker-spring-boot
+    
+networks:
+  default:
+    external:
+      name: docker-test
